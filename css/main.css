@@ -1,0 +1,1441 @@
+* { margin: 0; padding: 0; }
+li { list-style: none}
+a { text-decoration: none; display: block; color: #333;}
+img { width: 100%}
+html, body {  font-family: 'Nanum Gothic', sans-serif;}
+
+.wrap { width: 100%; }
+section { width: 100%;}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 2px solid #18ff3e;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    z-index: 100;
+    
+    
+}
+header nav { width: 60vw; margin-top: 1.4vw; position: relative; z-index: 100;}
+header nav > ul { display: flex; justify-content: space-between;}
+
+header nav > ul > li > a {
+    font-size: 0.8vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.6vw 2vw;
+    padding-bottom: 1.3vw;
+}
+
+header nav .sub {
+    padding-top: 1vw;
+    display: none;
+
+}
+
+header nav .sub li a {
+    padding: 0.5vw;
+    font-size: 0.75vw;
+    text-align: center;
+
+    
+}
+
+header nav > ul > li:hover > a {
+    color: #18ff3e;
+}
+header nav .sub li a:hover {
+    color: #18ff3e;
+}
+
+header .close {
+    display: none;
+}
+
+/*서브메뉴배경*/
+header .sub_bg {
+    position: absolute;
+    top: 102px;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
+    width: 100%; height: 17vw;
+    display: none;
+}
+
+header .logo { width:7vw; margin-top: 1vw; }
+header nav { width: 60vw;}
+
+header .sns { width: 150px; display: flex;}
+header .sns ul {display: flex; justify-content: space-between;}
+header .sns ul li { width: 2.2vw}
+
+/*햄버거 메뉴(모바일용 메뉴) 숨김*/
+header .mobile_menu {
+    display: none;
+}
+
+/*sns*/
+header .sns { width: 6.6vw;
+margin-top: 2.3vw;}
+header .sns ul { display: flex;
+justify-content: space-between;}
+header .sns ul li {width: 1.4vw;}
+
+
+/*슬라이드 - swiper*/
+.swiper1 { height: 100%;}
+.s1 {
+    background-image: url(../img/slide1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2 {
+    background-image: url(../img/slide2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s3 {
+    background-image: url(../img/slide3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.banner h1 {
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 7vw;
+    top: 30vw; /*1.5vw*/
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.34, 1.4, 0.64, 1);
+    transition-delay: 0.5s;
+    
+}
+.banner h1.active {
+    top: 10vw; /*1.5vw*/
+    opacity: 1;
+}
+
+.banner p {
+    text-align: center;
+    margin: 1vw;
+    font-size: 1vw;
+}
+
+.banner_in {
+    
+    display: flex;
+    justify-content: space-between;
+}
+/*banner*/
+
+
+.banner_in_PC {
+    display: block;
+    width: 64vw;      /*(1920-720)*100*/
+    margin: 0 auto;
+    margin-top: 2vw;
+
+    
+}
+.banner_in > div {
+    width: 47%;
+    height: 28vw;
+    margin: 1.3vw 0;
+    border: 5px solid #333;
+}
+
+.banner_in div div {
+    width: 100%;
+    height: 14vw;
+}
+
+.motion {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.motion div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+ .box {
+    background-color: rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    padding: 6vw;
+    line-height: 30px;
+    font-size: 1vw;
+    display: none;
+}
+
+.motion  img, .des img {
+    width: initial;
+}
+
+.motion .image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.b1 .motion .image {
+    background-image: url(../img/tumbler.jpg);
+}
+
+.b2 .motion .image {
+    background-image: url(../img/pajama.jpg);
+}
+
+
+/*b1, b2에 마우스 오버했을 떄 .box 나타남*/
+.banner_in > div:hover .box {
+    display: block;
+}
+
+
+.banner_in .des {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 3vw;
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.8vw;
+    
+}
+
+.banner_in_h3 {
+    font-size: 1.4vw;
+    font-family: euljiro;
+    margin-bottom: 1.2vw;
+}
+
+.banner_in button {
+    padding: 0.4vw;
+    margin-top: 1.2vw;
+    background-color: #ddd;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.banner_in_mobile {
+    display: none;
+}
+
+
+/*item-cluture archive*/
+
+.item h1 {
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 7vw;
+    top: 30vw; /*1.5vw*/
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.34, 1.4, 0.64, 1);
+    transition-delay: 0.5s;
+    
+}
+.item h1.active {
+    top: 10vw; /*1.5vw*/
+    opacity: 1;
+}
+
+.item p {
+    text-align: center;
+    margin:2vw;
+    font-size: 1vw;
+}
+
+.item {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper3 {
+    margin-top: 3vw;
+    height: 28vw;
+}
+
+.swiper3 .swiper-slide {
+    position: relative;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    
+    
+}
+
+.swiper3 .swiper-slide:nth-child(odd) {
+    margin-top: 5vw;
+}
+.swiper3 .swiper-slide div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.swiper3 .swiper-slide div img {
+    width: initial;
+}
+
+
+.swiper3 .swiper-slide .circle {
+    background-color: azure;
+    padding: 2vw;
+}
+
+.swiper3 .swiper-slide .circle p {
+    position: absolute;
+    font-size: 0.8vw;
+    font-weight: bold;
+    bottom: 5vw;
+}
+
+.swiper3 .swoper-slide .over {
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: #fff;
+    padding: 8vw;
+    line-height: 2vw;
+    font-size: 0.8vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper3 .swiper-slide:hover .over {
+    display: block;
+}
+
+.swiper3 .item_prev {
+    top:26vw;
+    left: 50%;
+    margin-left: -5vw;
+
+}
+
+.swiper3 .item_next {
+    top: 26vw;
+    left: 50%;
+    margin-left: 0.5vw;
+
+}
+
+.list h1 {
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 0vw;
+    top: 30vw; /*1.5vw*/
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.34, 1.4, 0.64, 1);
+    transition-delay: 0.5s;
+    
+}
+.list h1.active {
+    top: 13vw; /*1.5vw*/
+    opacity: 1;
+}
+
+
+.list h2 {
+    text-align: center;
+    font-size: 1vw;
+    padding-top: 0vw;
+    top: 30vw; /*1.5vw*/
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.34, 1.4, 0.64, 1);
+    transition-delay: 0.5s;
+    
+}
+.list h2.active {
+    top: 12vw; /*1.5vw*/
+    opacity: 1;
+}
+
+.list p {
+    text-align: center;
+    margin: 1vw;
+    
+}
+
+
+.swiper4 {
+    margin-top: 3vw;
+    height: 24.5vw;
+}
+
+
+.swiper4 .swiper-slide {
+    position: relative;
+    width: 22vw;
+    height: 22vw;
+    overflow: hidden;
+
+}
+
+.swiper4 .list_prev {
+    top: 23vw;
+    left: 50%;
+    margin-left: -4.5vw;
+    opacity: 0.8;
+}
+
+.swiper4 .list_next {
+    top: 23vw;
+    left: 50%;
+    margin-left: 0vw;
+    opacity: 0.8vw;
+}
+
+footer {
+    border-top: 1px solid #999;
+    height: 8vw;
+    padding-top: 3vw;
+    float: left;
+    width: 100%;
+    background-color: #333;
+    padding-bottom: 3vw;
+    
+}
+
+footer .footer_wrap {
+    width: 62.5vw;
+    margin: 0 auto;
+}
+
+footer .footer_wrap .footer_logo {
+    width: 10vw;
+    float: left;
+    
+}
+footer .footer_wrap .addr {
+    float: left;
+    margin-left: 5vw;
+}
+
+footer .footer_wrap .addr address {
+    font-size: nomal;
+    margin: auto;
+    line-height: 1vw;
+    color: #ddd;
+    font-style: normal;
+    font-size: 0.7vw;
+}
+
+footer .footer_wrap .addr p {
+    font-size: 0.7vw;
+    margin: 1vw 0;
+    color: #ddd;
+}
+
+
+
+
+
+
+
+/*노트북,태블릿*/
+@media screen and (max-width:960px){
+    header {
+        height: 60px;
+    }
+    header .header_in {
+        width: 99%;
+    }
+    
+    header .logo {
+        width: 10vw;
+        margin: 1vw;
+    }
+    header nav > ul > li > a {
+        font-size: 1vw;
+        padding-top: 1vw;
+    }
+    header .sub_bg {
+        top: 62px;
+        height: 20vw;
+    }
+    header .sns {
+        width: 8vw;
+        margin-top: 1.5vw;
+    }
+    header .sns ul li {
+        width: 3vw;
+    }
+    .s1 {
+        background-image: url(../img/s1.png);
+    } 
+    
+    .s2 {
+        background-image: url(../img/s2.png);
+    }
+    .s3 {
+        background-image: url(../img/s3.png);
+    }
+    
+    .banner h1 {
+        font-size: 3vw;
+    }
+    
+    .banner h1.active {
+        top: 7vw;
+    }
+    
+    .banner .fp-tableCell > p {
+        font-size: 2vw;
+    }
+    
+    .banner .fp-sableCell > p.active {
+        top: 22vw;
+        
+    }
+    
+    .banner_in {
+        width: 96vw;
+        margin-left: -16vw;
+    }
+    
+    .banner_in.active {
+        top: 25vw;
+    }
+    
+    .banner_in > div {
+        height: 60vw;
+    }
+    .banner_in div div {
+        height: 30vw;
+    }
+    
+    .banner_h3 {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+    .banner_in .des {
+        font-size: 1.6vw;
+        line-height: 2.4vw;
+        padding: 6vw;
+    }
+    .banner_in button {
+        font-size: 1.6vw;
+        padding: 2vw 2vw;
+        margin-top: 3vw;
+    }
+    
+    .motion .box {
+        font-size: 2.2vw;
+        padding: 10vw;
+        line-height: 34vw;
+    }
+    
+    .motion .box img {
+        width: 3vw;
+    }
+    
+    .item h1 {
+        font-size: 4vw;
+    }
+    
+    .item h1.active {
+        top: 17vw;
+    }
+    
+    .item .fp-tableCell > p {
+        font-size: 2vw;
+    }
+    
+    .item .fp-tabelCell > p.active {
+        top: 22vw;
+    }
+    
+    .swiper3 {
+        top: 12vw;
+        height: 60vw;
+    }
+    
+    .swiper3 .swiper-slide {
+        width: 29vw;
+        height: 29vw;
+    }
+    
+    .swiper3 .item_next,
+    .swiper3 .item_prev {
+        top: 52vw;
+        width: 5vw;
+    }
+    .swiper3 .item_next {
+        margin-left: 2vw;;
+    }
+    
+    .swiper3 .item_prev {
+        margin-left: -8vw;
+        
+    }
+    
+    .list .swiper4 .swiper-slide {
+        width: 33vw;
+        height: 33vw;
+    }
+    
+    .list .swiper4 .list_next,
+    .list .swiper4 .list_prev {
+        top: 40vw;
+        width: 5vw;
+    }
+    .list .swiper4 .list_next {
+        margin-left: 2vw;;
+    }
+    
+    .list .swiper4 .list_prev {
+        margin-left: -8vw;
+        
+    }
+    
+    .list h1 {
+        font-size: 4vw;
+        
+    }
+    
+    .list h1.active {
+        top: 20vw;
+        
+    }
+    
+    .list .fp-tableCell > p {
+        font-size: 2vw;
+    }
+    
+    .list .fp-tableCell > p.active {
+        top: 30vw;
+    }
+    
+    .list .swiper4 {
+        margin-top: 12vw;
+        height: 45vw;
+    }
+    
+    footer .footer_wrap {
+        width: 96%;
+    }
+    footer .footer_wrap .footer_logo {
+        width: 12vw;
+        margin-left: 23vw;
+        
+    }
+    footer .footer_wrap .addr address {
+        font-size: 1.3vw;
+        line-height: 1.4vw;
+    }
+    footer .footer_wrap .footer_banner {
+        width: 18vw;
+        
+        
+    }
+    footer .footer_wrap .footer_banner ul {
+        flex-flow: row-wrap;
+    }
+    
+    footer .footer_wrap .footer_banner ul li {
+        width: 50%;
+    }
+}
+/*해상도 480*/
+@media screen and (max-width:480px){
+    
+    .slide .s1 {
+       background-image: url(../img/mobile1.png);
+    }
+    
+    .slide .s2 {
+        background-image: url(../img/mobile2.png);
+    }
+    
+    .slide .s3 {
+        background-image: url(../img/mobile3.png);
+    }
+    
+    header {
+        height: 20vw;
+    }
+    
+    header .logo {
+        width: 30vw;
+        margin: 3vw 0vw;
+    }
+    
+    /*햄버거 메뉴(모바일용 메뉴) 숨김*/
+    header .mobile_menu {
+        display: block;
+        width: 15vw;
+        margin: 3vw 0vw;
+        margin-left: 40vw;
+    }
+    
+    header nav {
+        position: absolute;
+        background-color: #fff;
+        right: -100vw;
+        top: 0vw;
+        width: 70vw;
+        box-sizing: border-box;
+        padding: 12vw;
+        margin: 0;
+    }
+    header nav ul {
+        flex-flow: column nowrap;
+    }
+    
+    header nav ul li {
+        float: none;
+    }
+    header nav > ul > li > a {
+        color: #18ff3e;
+        font-size: 5vw;
+        text-align: left;
+    }
+    header nav .sub li a {
+        font-size: 4vw;
+        color: #333;
+        text-align: left;
+    }
+    
+    header nav .close {
+        display: block;
+        width: 10vw;
+        position: absolute;
+        top: 3vw;
+        right: 7vw;
+    }
+    
+    header .sns_bg {
+        display: none;
+    }
+    
+    header .sns {
+        position: absolute;
+        display: none;
+    }
+    .slide {
+        margin-top: 20vw;
+    }
+    
+    .slide .swiper1 {
+        height: 60vw;
+    }
+    
+    .slide .swiper-button-prev,
+    .slide .swiper-button-next {
+        width: 10vw;
+    }
+    
+    
+    .slide .swiper-pagination {
+        bottom: 2vw;
+    }
+    
+    .banner h1 {
+        opacity: 1;
+        top: 15vw;
+        position: relative;
+        transition: none;
+        font-size: 7vw;
+        white-space: normal;
+    }
+    .banner h1.active {
+        top: 15vw;
+        opacity: 1;
+    }
+    .banner p {
+        opacity: 1;
+        top: 15vw;
+        position: relative;
+        transition: none;
+        font-size: 3.5vw;
+    }
+    
+    .banner_in_PC {
+        display: none;
+    }
+    .banner_in_mobile {
+        display: block;
+        margin-top: 30vw;
+    }
+    .swiper2 {
+        width: 94vw;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 150vw;
+        
+    }
+    .swiper2 .swiper-slide {
+        height: 120vw;
+        margin:0;
+        box-sizing: border-box;
+        border: 5px solid #323232;
+        overflow: hidden;
+    }
+    
+    .swiper2 .swiper-slide div {
+        height: 60vw;
+    }
+    
+    .motion {
+        width: 100%;
+        height: 60vw;
+        position: relative;
+        transform: scale(1,1);
+    }
+    
+    .motion div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .motion .image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .b1 .motion .image {
+        background-image: url(../img/tumbler.jpg);
+    }
+    .b2 .motion .image {
+        background-image: url(../img/pajama.jpg);
+    }
+    
+    .swiper2 .des {
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 10vw;
+        text-align: center;
+        line-height: 20px;
+        font-size: 0.8vw;
+        height: 60vw;
+    }
+    .swiper2 h3 {
+        font-size: 7vw;
+        font-family: euljiro;
+        margin-bottom: 1.3vw;
+    }
+    .swiper2 p {
+        font-size: 4vw;
+        margin-top: 4vw;
+    }
+    .swiper button {
+        padding: 2vw 4.5vw;
+        margin-top: 5vw;
+        background-color: #ddd;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+            
+        
+    }
+    
+    
+    .swiper2 .swiper-pagination {
+        bottom: 50px;
+    }
+    .swiper2 .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    
+    /*item*/
+    .item h1 {
+        opacity: 1;
+        top: 15vw;
+        position: relative;
+        transition: none;
+        font-size: 7vw;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .item h1.active {
+        top: 15vw;
+        opacity: 1;
+        
+    }
+    .item .fp-tableCell > p {
+        top: 20vw;
+        opacity: 1;
+        transition: none;
+        position: relative;
+        font-size: 3.5vw;
+        
+    }
+    
+    .item .fp-tableCell > p.active {
+        top: 20vw;
+        opacity: 1;
+    }
+    
+    
+    .item p {
+        opacity: 1;
+        top: 15vw;
+        position: relative;
+        transition: none;
+        font-size: 3.5vw;
+    }
+    .swiper3 {
+        top: 0;
+        margin-top: 30vw;
+        height: 120vw;
+        position: relative;
+        width: 100%;
+    }
+    .swiper3 .swiper-slide {
+        position: relative;
+        height: 65vw;
+        transition: scale(1,1);
+        transition: none;
+    }
+    
+    .swiper3 .swiper-slide.active {
+        transform: scale(1,1);
+    }
+    
+    .swiper3 .swiper-slide:nth-child(odd){
+        margin-top: 10vw;
+    }
+
+    .swiper3 .swiper-button-prev,
+    .swiper3 .swiper-button-next {
+        width: 8vw;
+        top: 85vw;
+    }
+    
+    .swiper3 .swiper-button-prev {
+        margin-left: -8vw;
+    }
+    
+    .swiper3 .swiper-button-next {
+        margin-left: vw;
+    }
+    
+    .list h1 {
+        opacity: 1;
+        top: 30vw;
+        position: relative;
+        transition: none;
+        font-size: 7vw;
+        white-space: normal;
+        width: 100vw;
+       
+    }
+    .list h1.active {
+        top: 30vw;
+        opacity: 1;
+    }
+    .list h2 {
+        opacity: 1;
+        top: 30vw;
+        position: relative;
+        transition: none;
+        font-size: 2vw;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .list h2.active {
+        top: 30vw;
+        opacity: 1;
+    }
+    .list .fp-tableCell > p {
+        top: 30vw;
+        opacity: 1;
+        transition: none;
+        position: relative;
+        font-size: 2vw;
+        
+    }
+    
+    .list .fp-tableCell > p.active {
+        top: 30vw;
+        opacity: 1;
+    }
+    
+    
+    .list p {
+        opacity: 1;
+        top: 5vw;
+        position: relative;
+        transition: none;
+        font-size: 2vw;
+    }
+    
+    .list .swiper4  {
+        position: relative;
+        top: 35vw;
+        height: 160vw;
+    }
+
+    .list .swiper4 .swiper-slide {
+        height: 80vw;
+    
+    }
+    
+    .list .swiper4 .list_prev {
+        width: 10vw;
+        top: 90vw;
+        left: 50%;
+        margin-left: -12vw;
+        opacity: 0.8;
+    }
+    .list .swiper4 .list_next {
+        width: 10vw;
+        top: 90vw;
+        left: 50%;
+    }
+    
+    /*footer*/
+    footer {
+        padding: 10vw 5vw;
+    }
+    footer .footer_wrap {
+        flex-flow: column nowrap;
+    }
+    footer .footer_wrap .footer_logo {
+        width: 30vw;
+        margin: 5vw auto;
+        float: none;
+    }
+    footer .footer_wrap .addr address {
+        font-size: 3vw;
+        line-height: 7vw;
+    }
+    
+    footer .footer_wrap .addr p {
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+    
+        
+    
+    
+    
+    
+}
+
+
+/*모바일*/
+@media screen and (max-width:320px){
+    
+    .slide .s1 {
+       background-image: url(../img/mobile1.png);
+    }
+    
+    .slide .s2 {
+        background-image: url(../img/mobile2.png);
+    }
+    
+    .slide .s3 {
+        background-image: url(../img/mobile3.png);
+    }
+    
+    header {
+        height: 20vw;
+    }
+    
+    header .logo {
+        width: 30vw;
+        margin: 3vw 0vw;
+    }
+    
+    /*햄버거 메뉴(모바일용 메뉴) 숨김*/
+    header .mobile_menu {
+        display: block;
+        width: 15vw;
+        margin: 3vw 0vw;
+        margin-left: 40vw;
+    }
+    
+    header nav {
+        position: absolute;
+        background-color: #fff;
+        right: -100vw;
+        top: 0vw;
+        width: 70vw;
+        box-sizing: border-box;
+        padding: 12vw;
+        margin: 0;
+    }
+    header nav ul {
+        flex-flow: column nowrap;
+    }
+    
+    header nav ul li {
+        float: none;
+    }
+    header nav > ul > li > a {
+        color: #18ff3e;
+        font-size: 5vw;
+        text-align: left;
+    }
+    header nav .sub li a {
+        font-size: 4vw;
+        color: #333;
+        text-align: left;
+    }
+    
+    header nav .close {
+        display: block;
+        width: 10vw;
+        position: absolute;
+        top: 3vw;
+        right: 7vw;
+    }
+    
+    header .sns_bg {
+        display: none;
+    }
+    
+    header .sns {
+        position: absolute;
+        display: none;
+    }
+    .slide {
+        margin-top: 20vw;
+    }
+    
+    .slide .swiper1 {
+        height: 60vw;
+    }
+    
+    .slide .swiper-button-prev,
+    .slide .swiper-button-next {
+        width: 10vw;
+    }
+    
+    
+    .slide .swiper-pagination {
+        bottom: 2vw;
+    }
+    
+    .banner h1 {
+        opacity: 1;
+        top: 15vw;
+        position: relative;
+        transition: none;
+        font-size: 7vw;
+        white-space: normal;
+    }
+    .banner h1.active {
+        top: 15vw;
+        opacity: 1;
+    }
+    .banner p {
+        opacity: 1;
+        top: 15vw;
+        position: relative;
+        transition: none;
+        font-size: 3.5vw;
+    }
+    
+    .banner_in_PC {
+        display: none;
+    }
+    .banner_in_mobile {
+        display: block;
+        margin-top: 30vw;
+    }
+    .swiper2 {
+        width: 94vw;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 150vw;
+        
+    }
+    .swiper2 .swiper-slide {
+        height: 120vw;
+        margin:0;
+        box-sizing: border-box;
+        border: 5px solid #323232;
+        overflow: hidden;
+    }
+    
+    .swiper2 .swiper-slide div {
+        height: 60vw;
+    }
+    
+    .motion {
+        width: 100%;
+        height: 60vw;
+        position: relative;
+        transform: scale(1,1);
+    }
+    
+    .motion div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .motion .image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .b1 .motion .image {
+        background-image: url(../img/tumbler.jpg);
+    }
+    .b2 .motion .image {
+        background-image: url(../img/pajama.jpg);
+    }
+    
+    .swiper2 .des {
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 10vw;
+        text-align: center;
+        line-height: 20px;
+        font-size: 0.8vw;
+        height: 60vw;
+    }
+    .swiper2 h3 {
+        font-size: 7vw;
+        font-family: euljiro;
+        margin-bottom: 1.3vw;
+    }
+    .swiper2 p {
+        font-size: 4vw;
+        margin-top: 4vw;
+    }
+    .swiper button {
+        padding: 2vw 4.5vw;
+        margin-top: 5vw;
+        background-color: #ddd;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+            
+        
+    }
+    
+    
+    .swiper2 .swiper-pagination {
+        bottom: 50px;
+    }
+    .swiper2 .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    
+    /*item*/
+    .item h1 {
+        opacity: 1;
+        top: 15vw;
+        position: relative;
+        transition: none;
+        font-size: 7vw;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .item h1.active {
+        top: 15vw;
+        opacity: 1;
+        
+    }
+    .item .fp-tableCell > p {
+        top: 20vw;
+        opacity: 1;
+        transition: none;
+        position: relative;
+        font-size: 3.5vw;
+        
+    }
+    
+    .item .fp-tableCell > p.active {
+        top: 20vw;
+        opacity: 1;
+    }
+    
+    
+    .item p {
+        opacity: 1;
+        top: 15vw;
+        position: relative;
+        transition: none;
+        font-size: 3.5vw;
+    }
+    .swiper3 {
+        top: 0;
+        margin-top: 30vw;
+        height: 120vw;
+        position: relative;
+        width: 100%;
+    }
+    .swiper3 .swiper-slide {
+        position: relative;
+        height: 65vw;
+        transition: scale(1,1);
+        transition: none;
+    }
+    
+    .swiper3 .swiper-slide.active {
+        transform: scale(1,1);
+    }
+    
+    .swiper3 .swiper-slide:nth-child(odd){
+        margin-top: 10vw;
+    }
+
+    .swiper3 .swiper-button-prev,
+    .swiper3 .swiper-button-next {
+        width: 8vw;
+        top: 85vw;
+    }
+    
+    .swiper3 .swiper-button-prev {
+        margin-left: -8vw;
+    }
+    
+    .swiper3 .swiper-button-next {
+        margin-left: vw;
+    }
+    
+    .list h1 {
+        opacity: 1;
+        top: 30vw;
+        position: relative;
+        transition: none;
+        font-size: 7vw;
+        white-space: normal;
+        width: 100vw;
+       
+    }
+    .list h1.active {
+        top: 30vw;
+        opacity: 1;
+    }
+    .list h2 {
+        opacity: 1;
+        top: 30vw;
+        position: relative;
+        transition: none;
+        font-size: 2vw;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .list h2.active {
+        top: 30vw;
+        opacity: 1;
+    }
+    .list .fp-tableCell > p {
+        top: 30vw;
+        opacity: 1;
+        transition: none;
+        position: relative;
+        font-size: 2vw;
+        
+    }
+    
+    .list .fp-tableCell > p.active {
+        top: 30vw;
+        opacity: 1;
+    }
+    
+    
+    .list p {
+        opacity: 1;
+        top: 5vw;
+        position: relative;
+        transition: none;
+        font-size: 2vw;
+    }
+    
+    .list .swiper4  {
+        position: relative;
+        top: 35vw;
+        height: 160vw;
+    }
+
+    .list .swiper4 .swiper-slide {
+        height: 80vw;
+    
+    }
+    
+    .list .swiper4 .list_prev {
+        width: 10vw;
+        top: 90vw;
+        left: 50%;
+        margin-left: -12vw;
+        opacity: 0.8;
+    }
+    .list .swiper4 .list_next {
+        width: 10vw;
+        top: 90vw;
+        left: 50%;
+    }
+    
+    /*footer*/
+    footer {
+        padding: 10vw 5vw;
+    }
+    footer .footer_wrap {
+        flex-flow: column nowrap;
+    }
+    footer .footer_wrap .footer_logo {
+        width: 30vw;
+        margin: 5vw auto;
+        float: none;
+    }
+    footer .footer_wrap .addr address {
+        font-size: 3vw;
+        line-height: 7vw;
+    }
+    
+    footer .footer_wrap .addr p {
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+    
+        
+    
+    
+    
+    
+}
