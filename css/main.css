@@ -92,21 +92,21 @@ header .sns ul li {width: 1.4vw;}
 /*슬라이드 - swiper*/
 .swiper1 { height: 100%;}
 .s1 {
-    background-image: url(../img/slide1.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/slide1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .s2 {
-    background-image: url(../img/slide2.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/slide2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .s3 {
-    background-image: url(../img/slide3.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/slide3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -200,11 +200,11 @@ header .sns ul li {width: 1.4vw;}
 }
 
 .b1 .motion .image {
-    background-image: url(../img/tumbler.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/tumbler.jpg);
 }
 
 .b2 .motion .image {
-    background-image: url(../img/pajama.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/pajama.jpg);
 }
 
 
@@ -272,7 +272,7 @@ header .sns ul li {width: 1.4vw;}
 }
 
 .item {
-    background-image: url(../img/background.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -492,14 +492,14 @@ footer .footer_wrap .addr p {
         width: 3vw;
     }
     .s1 {
-        background-image: url(../img/s1.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/s1.png);
     } 
     
     .s2 {
-        background-image: url(../img/s2.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/s2.png);
     }
     .s3 {
-        background-image: url(../img/s3.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/s3.png);
     }
     
     .banner h1 {
@@ -671,15 +671,15 @@ footer .footer_wrap .addr p {
 @media screen and (max-width:480px){
     
     .slide .s1 {
-       background-image: url(../img/mobile1.png);
+       background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/mobile1.png);
     }
     
     .slide .s2 {
-        background-image: url(../img/mobile2.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/mobile2.png);
     }
     
     .slide .s3 {
-        background-image: url(../img/mobile3.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/mobile3.png);
     }
     
     header {
@@ -827,10 +827,10 @@ footer .footer_wrap .addr p {
     }
     
     .b1 .motion .image {
-        background-image: url(../img/tumbler.jpg);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/tumbler.jpg);
     }
     .b2 .motion .image {
-        background-image: url(../img/pajama.jpg);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/pajama.jpg);
     }
     
     .swiper2 .des {
@@ -1058,15 +1058,15 @@ footer .footer_wrap .addr p {
 @media screen and (max-width:320px){
     
     .slide .s1 {
-       background-image: url(../img/mobile1.png);
+       background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/mobile1.png);
     }
     
     .slide .s2 {
-        background-image: url(../img/mobile2.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/mobile2.png);
     }
     
     .slide .s3 {
-        background-image: url(../img/mobile3.png);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/mobile3.png);
     }
     
     header {
@@ -1214,10 +1214,10 @@ footer .footer_wrap .addr p {
     }
     
     .b1 .motion .image {
-        background-image: url(../img/tumbler.jpg);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/tumbler.jpg);
     }
     .b2 .motion .image {
-        background-image: url(../img/pajama.jpg);
+        background-image: url(https://cdn.jsdelivr.net/gh/js2572/line//img/pajama.jpg);
     }
     
     .swiper2 .des {
